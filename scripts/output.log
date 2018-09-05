@@ -1,0 +1,282 @@
+2018-08-27 20:08:04,004 - DEBUG - Initialized network = 0, {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-27 20:08:04,006 - DEBUG - Initialized network = 1, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-27 20:08:04,008 - DEBUG - Initialized network = 2, {'dropout': 0.5, 'optimizer': 'adadelta', 'activation': 'relu', 'nbLayers': 3, 'nbNeurons': 256}
+2018-08-27 20:08:04,009 - DEBUG - Initialized network = 3, {'dropout': 0.1, 'optimizer': 'sgd', 'activation': 'selu', 'nbLayers': 6, 'nbNeurons': 64}
+2018-08-27 20:08:04,011 - DEBUG - Initialized network = 4, {'dropout': 0.25, 'optimizer': 'adamax', 'activation': 'relu', 'nbLayers': 1, 'nbNeurons': 1024}
+2018-08-27 20:08:04,012 - DEBUG - Initialized network = 5, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-27 20:08:04,014 - DEBUG - Initialized network = 6, {'dropout': 0.3, 'optimizer': 'adam', 'activation': 'selu', 'nbLayers': 9, 'nbNeurons': 256}
+2018-08-27 20:08:04,016 - DEBUG - Prev Rank = 6, dad = {'dropout': 0.3, 'optimizer': 'adam', 'activation': 'selu', 'nbLayers': 9, 'nbNeurons': 256}
+2018-08-27 20:08:04,017 - DEBUG - Crossover Done, generation = 0, child = 0, {'dropout': 0.3, 'optimizer': 'adam', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-27 20:08:04,018 - DEBUG - Mutation Done, generation = 0, child = 0, {'dropout': 0.3, 'optimizer': 'adam', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-27 20:47:08,874 - DEBUG - Training Done, generation = 0, networks = 0, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-27 20:47:08,881 - DEBUG - Prev Rank = 0, dad = {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-27 20:47:08,883 - DEBUG - Crossover Done, generation = 0, child = 1, {'dropout': 0.2, 'optimizer': 'adagrad', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-27 20:47:08,885 - DEBUG - Mutation Done, generation = 0, child = 1, {'dropout': 0.2, 'optimizer': 'adagrad', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-27 21:01:48,598 - DEBUG - Training Done, generation = 0, networks = 1, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-27 21:01:48,605 - DEBUG - Prev Rank = 1, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-27 21:01:48,607 - DEBUG - Crossover Done, generation = 0, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 256}
+2018-08-27 21:01:48,608 - DEBUG - Mutation Done, generation = 0, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 256}
+2018-08-27 21:12:57,583 - DEBUG - Training Done, generation = 0, networks = 2, parentFitness = 21.6700, childFitness = 21.8300
+2018-08-27 21:12:57,587 - DEBUG - Prev Rank = 2, dad = {'dropout': 0.5, 'optimizer': 'adadelta', 'activation': 'relu', 'nbLayers': 3, 'nbNeurons': 256}
+2018-08-27 21:12:57,588 - DEBUG - Crossover Done, generation = 0, child = 3, {'dropout': 0.1, 'optimizer': 'sgd', 'activation': 'selu', 'nbLayers': 6, 'nbNeurons': 64}
+2018-08-27 21:12:57,589 - DEBUG - Mutation Done, generation = 0, child = 3, {'dropout': 0.1, 'optimizer': 'sgd', 'activation': 'selu', 'nbLayers': 6, 'nbNeurons': 64}
+2018-08-27 21:17:35,197 - DEBUG - Training Done, generation = 0, networks = 3, parentFitness = 37.8000, childFitness = 42.5900
+2018-08-27 21:17:35,201 - DEBUG - Prev Rank = 3, dad = {'dropout': 0.1, 'optimizer': 'sgd', 'activation': 'selu', 'nbLayers': 6, 'nbNeurons': 64}
+2018-08-27 21:17:35,202 - DEBUG - Crossover Done, generation = 0, child = 4, {'dropout': 0.25, 'optimizer': 'sgd', 'activation': 'selu', 'nbLayers': 6, 'nbNeurons': 64}
+2018-08-27 21:17:35,203 - DEBUG - Mutation Done, generation = 0, child = 4, {'dropout': 0.25, 'optimizer': 'sgd', 'activation': 'selu', 'nbLayers': 6, 'nbNeurons': 64}
+2018-08-27 22:04:52,706 - DEBUG - Training Done, generation = 0, networks = 4, parentFitness = 48.3600, childFitness = 46.6600
+2018-08-27 22:04:52,713 - DEBUG - Prev Rank = 4, dad = {'dropout': 0.25, 'optimizer': 'adamax', 'activation': 'relu', 'nbLayers': 1, 'nbNeurons': 1024}
+2018-08-27 22:04:52,715 - DEBUG - Crossover Done, generation = 0, child = 5, {'dropout': 0.4, 'optimizer': 'adamax', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-27 22:04:52,716 - DEBUG - Mutation Done, generation = 0, child = 5, {'dropout': 0.4, 'optimizer': 'adamax', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-27 22:08:45,864 - DEBUG - Training Done, generation = 0, networks = 5, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-27 22:08:45,868 - DEBUG - Prev Rank = 5, dad = {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-27 22:08:45,869 - DEBUG - Crossover Done, generation = 0, child = 6, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'selu', 'nbLayers': 9, 'nbNeurons': 256}
+2018-08-27 22:08:45,870 - DEBUG - Mutation Done, generation = 0, child = 6, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'selu', 'nbLayers': 9, 'nbNeurons': 256}
+2018-08-27 22:30:17,337 - DEBUG - Training Done, generation = 0, networks = 6, parentFitness = 35.7200, childFitness = 34.5500
+2018-08-27 22:30:17,344 - DEBUG - Prev Rank = 6, dad = {'dropout': 0.3, 'optimizer': 'adam', 'activation': 'selu', 'nbLayers': 9, 'nbNeurons': 256}
+2018-08-27 22:30:17,346 - DEBUG - Crossover Done, generation = 1, child = 0, {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-27 22:30:17,347 - DEBUG - Mutation Done, generation = 1, child = 0, {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-27 23:12:11,542 - DEBUG - Training Done, generation = 1, networks = 0, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-27 23:12:11,550 - DEBUG - Prev Rank = 0, dad = {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-27 23:12:11,552 - DEBUG - Crossover Done, generation = 1, child = 1, {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 512}
+2018-08-27 23:12:11,554 - DEBUG - Mutation Done, generation = 1, child = 1, {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 512}
+2018-08-27 23:30:34,183 - DEBUG - Training Done, generation = 1, networks = 1, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-27 23:30:34,187 - DEBUG - Prev Rank = 1, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-27 23:30:34,188 - DEBUG - Crossover Done, generation = 1, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-27 23:30:34,189 - DEBUG - Mutation Done, generation = 1, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-27 23:49:32,111 - DEBUG - Training Done, generation = 1, networks = 2, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-27 23:49:32,117 - DEBUG - Prev Rank = 2, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-27 23:49:32,118 - DEBUG - Crossover Done, generation = 1, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-27 23:49:32,119 - DEBUG - Mutation Done, generation = 1, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 00:08:52,165 - DEBUG - Training Done, generation = 1, networks = 3, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 00:08:52,170 - DEBUG - Prev Rank = 3, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 00:08:52,171 - DEBUG - Crossover Done, generation = 1, child = 4, {'dropout': 0.25, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 00:08:52,172 - DEBUG - Mutation Done, generation = 1, child = 4, {'dropout': 0.25, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 00:46:27,142 - DEBUG - Training Done, generation = 1, networks = 4, parentFitness = 46.6800, childFitness = 44.7900
+2018-08-28 00:46:27,148 - DEBUG - Prev Rank = 4, dad = {'dropout': 0.25, 'optimizer': 'adamax', 'activation': 'relu', 'nbLayers': 1, 'nbNeurons': 1024}
+2018-08-28 00:46:27,150 - DEBUG - Crossover Done, generation = 1, child = 5, {'dropout': 0.25, 'optimizer': 'adamax', 'activation': 'relu', 'nbLayers': 1, 'nbNeurons': 32}
+2018-08-28 00:46:27,151 - DEBUG - Mutation Done, generation = 1, child = 5, {'dropout': 0.25, 'optimizer': 'adamax', 'activation': 'relu', 'nbLayers': 1, 'nbNeurons': 32}
+2018-08-28 00:51:43,591 - DEBUG - Training Done, generation = 1, networks = 5, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 00:51:43,595 - DEBUG - Prev Rank = 5, dad = {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 00:51:43,596 - DEBUG - Crossover Done, generation = 1, child = 6, {'dropout': 0.3, 'optimizer': 'adam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 00:51:43,597 - DEBUG - Mutation Done, generation = 1, child = 6, {'dropout': 0.3, 'optimizer': 'adam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 01:30:27,803 - DEBUG - Training Done, generation = 1, networks = 6, parentFitness = 34.2900, childFitness = 34.6700
+2018-08-28 01:30:27,808 - DEBUG - Prev Rank = 6, dad = {'dropout': 0.3, 'optimizer': 'adam', 'activation': 'selu', 'nbLayers': 9, 'nbNeurons': 256}
+2018-08-28 01:30:27,810 - DEBUG - Crossover Done, generation = 2, child = 0, {'dropout': 0.3, 'optimizer': 'adam', 'activation': 'selu', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 01:30:27,811 - DEBUG - Mutation Done, generation = 2, child = 0, {'dropout': 0.3, 'optimizer': 'adam', 'activation': 'selu', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 02:15:07,469 - DEBUG - Training Done, generation = 2, networks = 0, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 02:15:07,477 - DEBUG - Prev Rank = 0, dad = {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 02:15:07,479 - DEBUG - Crossover Done, generation = 2, child = 1, {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 3, 'nbNeurons': 768}
+2018-08-28 02:15:07,481 - DEBUG - Mutation Done, generation = 2, child = 1, {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 3, 'nbNeurons': 768}
+2018-08-28 02:36:38,878 - DEBUG - Training Done, generation = 2, networks = 1, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 02:36:38,884 - DEBUG - Prev Rank = 1, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 02:36:38,886 - DEBUG - Crossover Done, generation = 2, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 02:36:38,887 - DEBUG - Mutation Done, generation = 2, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 02:58:18,267 - DEBUG - Training Done, generation = 2, networks = 2, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 02:58:18,274 - DEBUG - Prev Rank = 2, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 02:58:18,275 - DEBUG - Crossover Done, generation = 2, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 02:58:18,276 - DEBUG - Mutation Done, generation = 2, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 03:20:12,264 - DEBUG - Training Done, generation = 2, networks = 3, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 03:20:12,270 - DEBUG - Prev Rank = 3, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 03:20:12,271 - DEBUG - Crossover Done, generation = 2, child = 4, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 1024}
+2018-08-28 03:20:12,272 - DEBUG - Mutation Done, generation = 2, child = 4, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 1024}
+2018-08-28 04:04:00,864 - DEBUG - Training Done, generation = 2, networks = 4, parentFitness = 45.5400, childFitness = 46.2000
+2018-08-28 04:04:00,870 - DEBUG - Prev Rank = 4, dad = {'dropout': 0.25, 'optimizer': 'adamax', 'activation': 'relu', 'nbLayers': 1, 'nbNeurons': 1024}
+2018-08-28 04:04:00,872 - DEBUG - Crossover Done, generation = 2, child = 5, {'dropout': 0.25, 'optimizer': 'adamax', 'activation': 'relu', 'nbLayers': 1, 'nbNeurons': 1024}
+2018-08-28 04:04:00,873 - DEBUG - Mutation Done, generation = 2, child = 5, {'dropout': 0.25, 'optimizer': 'adamax', 'activation': 'relu', 'nbLayers': 1, 'nbNeurons': 1024}
+2018-08-28 04:11:08,208 - DEBUG - Training Done, generation = 2, networks = 5, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 04:11:08,213 - DEBUG - Prev Rank = 5, dad = {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 04:11:08,214 - DEBUG - Crossover Done, generation = 2, child = 6, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 04:11:08,215 - DEBUG - Mutation Done, generation = 2, child = 6, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 04:18:52,499 - DEBUG - Training Done, generation = 2, networks = 6, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 04:18:52,504 - DEBUG - Prev Rank = 6, dad = {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 04:18:52,505 - DEBUG - Crossover Done, generation = 3, child = 0, {'dropout': 0.4, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 04:18:52,506 - DEBUG - Mutation Done, generation = 3, child = 0, {'dropout': 0.4, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 05:06:13,196 - DEBUG - Training Done, generation = 3, networks = 0, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 05:06:13,203 - DEBUG - Prev Rank = 0, dad = {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 05:06:13,205 - DEBUG - Crossover Done, generation = 3, child = 1, {'dropout': 0.2, 'optimizer': 'adagrad', 'activation': 'linear', 'nbLayers': 9, 'nbNeurons': 512}
+2018-08-28 05:06:13,207 - DEBUG - Mutation Done, generation = 3, child = 1, {'dropout': 0.2, 'optimizer': 'adagrad', 'activation': 'linear', 'nbLayers': 9, 'nbNeurons': 512}
+2018-08-28 05:29:24,319 - DEBUG - Training Done, generation = 3, networks = 1, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 05:29:24,324 - DEBUG - Prev Rank = 1, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 05:29:24,326 - DEBUG - Crossover Done, generation = 3, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 05:29:24,327 - DEBUG - Mutation Done, generation = 3, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 05:52:39,760 - DEBUG - Training Done, generation = 3, networks = 2, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 05:52:39,765 - DEBUG - Prev Rank = 2, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 05:52:39,766 - DEBUG - Crossover Done, generation = 3, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 05:52:39,767 - DEBUG - Mutation Done, generation = 3, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 06:15:58,502 - DEBUG - Training Done, generation = 3, networks = 3, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 06:15:58,508 - DEBUG - Prev Rank = 3, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 06:15:58,509 - DEBUG - Crossover Done, generation = 3, child = 4, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 06:15:58,511 - DEBUG - Mutation Done, generation = 3, child = 4, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 06:39:31,807 - DEBUG - Training Done, generation = 3, networks = 4, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 06:39:31,812 - DEBUG - Prev Rank = 4, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 06:39:31,813 - DEBUG - Crossover Done, generation = 3, child = 5, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 32}
+2018-08-28 06:39:31,814 - DEBUG - Mutation Done, generation = 3, child = 5, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 32}
+2018-08-28 06:48:28,961 - DEBUG - Training Done, generation = 3, networks = 5, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 06:48:28,966 - DEBUG - Prev Rank = 5, dad = {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 06:48:28,967 - DEBUG - Crossover Done, generation = 3, child = 6, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 06:48:28,968 - DEBUG - Mutation Done, generation = 3, child = 6, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 06:57:59,887 - DEBUG - Training Done, generation = 3, networks = 6, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 06:57:59,891 - DEBUG - Prev Rank = 6, dad = {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 06:57:59,892 - DEBUG - Crossover Done, generation = 4, child = 0, {'dropout': 0.4, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 06:57:59,893 - DEBUG - Mutation Done, generation = 4, child = 0, {'dropout': 0.4, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 07:47:04,858 - DEBUG - Training Done, generation = 4, networks = 0, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 07:47:04,866 - DEBUG - Prev Rank = 0, dad = {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 07:47:04,868 - DEBUG - Crossover Done, generation = 4, child = 1, {'dropout': 0.2, 'optimizer': 'adagrad', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 07:47:04,869 - DEBUG - Mutation Done, generation = 4, child = 1, {'dropout': 0.2, 'optimizer': 'adagrad', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 08:11:50,603 - DEBUG - Training Done, generation = 4, networks = 1, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 08:11:50,609 - DEBUG - Prev Rank = 1, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 08:11:50,610 - DEBUG - Crossover Done, generation = 4, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 08:11:50,612 - DEBUG - Mutation Done, generation = 4, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 08:36:43,660 - DEBUG - Training Done, generation = 4, networks = 2, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 08:36:43,667 - DEBUG - Prev Rank = 2, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 08:36:43,668 - DEBUG - Crossover Done, generation = 4, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 08:36:43,670 - DEBUG - Mutation Done, generation = 4, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 09:01:27,682 - DEBUG - Training Done, generation = 4, networks = 3, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 09:01:27,688 - DEBUG - Prev Rank = 3, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 09:01:27,690 - DEBUG - Crossover Done, generation = 4, child = 4, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 09:01:27,691 - DEBUG - Mutation Done, generation = 4, child = 4, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 09:26:16,847 - DEBUG - Training Done, generation = 4, networks = 4, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 09:26:16,851 - DEBUG - Prev Rank = 4, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 09:26:16,852 - DEBUG - Crossover Done, generation = 4, child = 5, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 09:26:16,853 - DEBUG - Mutation Done, generation = 4, child = 5, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 09:36:46,021 - DEBUG - Training Done, generation = 4, networks = 5, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 09:36:46,025 - DEBUG - Prev Rank = 5, dad = {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 09:36:46,026 - DEBUG - Crossover Done, generation = 4, child = 6, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 09:36:46,027 - DEBUG - Mutation Done, generation = 4, child = 6, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 09:47:46,853 - DEBUG - Training Done, generation = 4, networks = 6, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 09:47:46,858 - DEBUG - Prev Rank = 6, dad = {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 09:47:46,859 - DEBUG - Crossover Done, generation = 5, child = 0, {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'tanh', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 09:47:46,860 - DEBUG - Mutation Done, generation = 5, child = 0, {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'tanh', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 10:38:40,354 - DEBUG - Training Done, generation = 5, networks = 0, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 10:38:40,362 - DEBUG - Prev Rank = 0, dad = {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 10:38:40,364 - DEBUG - Crossover Done, generation = 5, child = 1, {'dropout': 0.5, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 768}
+2018-08-28 10:38:40,366 - DEBUG - Mutation Done, generation = 5, child = 1, {'dropout': 0.5, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 768}
+2018-08-28 11:04:45,184 - DEBUG - Training Done, generation = 5, networks = 1, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 11:04:45,189 - DEBUG - Prev Rank = 1, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 11:04:45,190 - DEBUG - Crossover Done, generation = 5, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 11:04:45,191 - DEBUG - Mutation Done, generation = 5, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 11:31:00,603 - DEBUG - Training Done, generation = 5, networks = 2, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 11:31:00,608 - DEBUG - Prev Rank = 2, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 11:31:00,609 - DEBUG - Crossover Done, generation = 5, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 11:31:00,610 - DEBUG - Mutation Done, generation = 5, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 11:57:17,219 - DEBUG - Training Done, generation = 5, networks = 3, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 11:57:17,224 - DEBUG - Prev Rank = 3, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 11:57:17,225 - DEBUG - Crossover Done, generation = 5, child = 4, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 11:57:17,226 - DEBUG - Mutation Done, generation = 5, child = 4, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 12:23:40,029 - DEBUG - Training Done, generation = 5, networks = 4, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 12:23:40,033 - DEBUG - Prev Rank = 4, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 12:23:40,034 - DEBUG - Crossover Done, generation = 5, child = 5, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 12:23:40,035 - DEBUG - Mutation Done, generation = 5, child = 5, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 12:35:39,119 - DEBUG - Training Done, generation = 5, networks = 5, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 12:35:39,123 - DEBUG - Prev Rank = 5, dad = {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 12:35:39,124 - DEBUG - Crossover Done, generation = 5, child = 6, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 12:35:39,125 - DEBUG - Mutation Done, generation = 5, child = 6, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 12:48:04,390 - DEBUG - Training Done, generation = 5, networks = 6, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 12:48:04,394 - DEBUG - Prev Rank = 6, dad = {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 12:48:04,396 - DEBUG - Crossover Done, generation = 6, child = 0, {'dropout': 0.5, 'optimizer': 'nadam', 'activation': 'sigmoid', 'nbLayers': 20, 'nbNeurons': 768}
+2018-08-28 12:48:04,396 - DEBUG - Mutation Done, generation = 6, child = 0, {'dropout': 0.5, 'optimizer': 'nadam', 'activation': 'sigmoid', 'nbLayers': 20, 'nbNeurons': 768}
+2018-08-28 13:40:27,614 - DEBUG - Training Done, generation = 6, networks = 0, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 13:40:27,622 - DEBUG - Prev Rank = 0, dad = {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 13:40:27,624 - DEBUG - Crossover Done, generation = 6, child = 1, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 768}
+2018-08-28 13:40:27,625 - DEBUG - Mutation Done, generation = 6, child = 1, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 768}
+2018-08-28 14:07:54,599 - DEBUG - Training Done, generation = 6, networks = 1, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 14:07:54,604 - DEBUG - Prev Rank = 1, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 14:07:54,605 - DEBUG - Crossover Done, generation = 6, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 14:07:54,606 - DEBUG - Mutation Done, generation = 6, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 14:35:37,499 - DEBUG - Training Done, generation = 6, networks = 2, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 14:35:37,503 - DEBUG - Prev Rank = 2, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 14:35:37,504 - DEBUG - Crossover Done, generation = 6, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 14:35:37,505 - DEBUG - Mutation Done, generation = 6, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 15:03:22,170 - DEBUG - Training Done, generation = 6, networks = 3, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 15:03:22,175 - DEBUG - Prev Rank = 3, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 15:03:22,176 - DEBUG - Crossover Done, generation = 6, child = 4, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 15:03:22,177 - DEBUG - Mutation Done, generation = 6, child = 4, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 15:31:01,450 - DEBUG - Training Done, generation = 6, networks = 4, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 15:31:01,474 - DEBUG - Prev Rank = 4, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 15:31:01,476 - DEBUG - Crossover Done, generation = 6, child = 5, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 3, 'nbNeurons': 32}
+2018-08-28 15:31:01,476 - DEBUG - Mutation Done, generation = 6, child = 5, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 3, 'nbNeurons': 32}
+2018-08-28 15:44:29,702 - DEBUG - Training Done, generation = 6, networks = 5, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 15:44:29,728 - DEBUG - Prev Rank = 5, dad = {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 15:44:29,729 - DEBUG - Crossover Done, generation = 6, child = 6, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 15:44:29,730 - DEBUG - Mutation Done, generation = 6, child = 6, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 15:58:22,682 - DEBUG - Training Done, generation = 6, networks = 6, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 15:58:22,694 - DEBUG - Prev Rank = 6, dad = {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 15:58:22,695 - DEBUG - Crossover Done, generation = 7, child = 0, {'dropout': 0.4, 'optimizer': 'adagrad', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 15:58:22,696 - DEBUG - Mutation Done, generation = 7, child = 0, {'dropout': 0.4, 'optimizer': 'adagrad', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 16:52:17,802 - DEBUG - Training Done, generation = 7, networks = 0, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 16:52:17,810 - DEBUG - Prev Rank = 0, dad = {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 16:52:17,812 - DEBUG - Crossover Done, generation = 7, child = 1, {'dropout': 0.5, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 16:52:17,813 - DEBUG - Mutation Done, generation = 7, child = 1, {'dropout': 0.5, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 17:21:05,418 - DEBUG - Training Done, generation = 7, networks = 1, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 17:21:05,423 - DEBUG - Prev Rank = 1, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 17:21:05,424 - DEBUG - Crossover Done, generation = 7, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 17:21:05,425 - DEBUG - Mutation Done, generation = 7, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 17:49:53,175 - DEBUG - Training Done, generation = 7, networks = 2, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 17:49:53,181 - DEBUG - Prev Rank = 2, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 17:49:53,183 - DEBUG - Crossover Done, generation = 7, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 17:49:53,185 - DEBUG - Mutation Done, generation = 7, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 18:18:47,367 - DEBUG - Training Done, generation = 7, networks = 3, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 18:18:47,371 - DEBUG - Prev Rank = 3, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 18:18:47,372 - DEBUG - Crossover Done, generation = 7, child = 4, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 18:18:47,373 - DEBUG - Mutation Done, generation = 7, child = 4, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 18:47:42,138 - DEBUG - Training Done, generation = 7, networks = 4, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 18:47:42,144 - DEBUG - Prev Rank = 4, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 18:47:42,146 - DEBUG - Crossover Done, generation = 7, child = 5, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 32}
+2018-08-28 18:47:42,147 - DEBUG - Mutation Done, generation = 7, child = 5, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 32}
+2018-08-28 19:02:36,353 - DEBUG - Training Done, generation = 7, networks = 5, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 19:02:36,358 - DEBUG - Prev Rank = 5, dad = {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 19:02:36,359 - DEBUG - Crossover Done, generation = 7, child = 6, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 19:02:36,360 - DEBUG - Mutation Done, generation = 7, child = 6, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 19:18:04,011 - DEBUG - Training Done, generation = 7, networks = 6, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 19:18:04,017 - DEBUG - Prev Rank = 6, dad = {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 19:18:04,018 - DEBUG - Crossover Done, generation = 8, child = 0, {'dropout': 0.4, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 19:18:04,019 - DEBUG - Mutation Done, generation = 8, child = 0, {'dropout': 0.4, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 20:13:16,381 - DEBUG - Training Done, generation = 8, networks = 0, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 20:13:16,389 - DEBUG - Prev Rank = 0, dad = {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 20:13:16,391 - DEBUG - Crossover Done, generation = 8, child = 1, {'dropout': 0.5, 'optimizer': 'nadam', 'activation': 'sigmoid', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 20:13:16,392 - DEBUG - Mutation Done, generation = 8, child = 1, {'dropout': 0.5, 'optimizer': 'nadam', 'activation': 'sigmoid', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 20:43:30,601 - DEBUG - Training Done, generation = 8, networks = 1, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 20:43:30,605 - DEBUG - Prev Rank = 1, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 20:43:30,606 - DEBUG - Crossover Done, generation = 8, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 20:43:30,607 - DEBUG - Mutation Done, generation = 8, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 21:13:51,133 - DEBUG - Training Done, generation = 8, networks = 2, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 21:13:51,137 - DEBUG - Prev Rank = 2, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 21:13:51,138 - DEBUG - Crossover Done, generation = 8, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 21:13:51,139 - DEBUG - Mutation Done, generation = 8, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 21:44:24,061 - DEBUG - Training Done, generation = 8, networks = 3, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 21:44:24,066 - DEBUG - Prev Rank = 3, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 21:44:24,067 - DEBUG - Crossover Done, generation = 8, child = 4, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 21:44:24,068 - DEBUG - Mutation Done, generation = 8, child = 4, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 22:14:59,143 - DEBUG - Training Done, generation = 8, networks = 4, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 22:14:59,148 - DEBUG - Prev Rank = 4, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-28 22:14:59,149 - DEBUG - Crossover Done, generation = 8, child = 5, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 3, 'nbNeurons': 32}
+2018-08-28 22:14:59,150 - DEBUG - Mutation Done, generation = 8, child = 5, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 3, 'nbNeurons': 32}
+2018-08-28 22:31:26,145 - DEBUG - Training Done, generation = 8, networks = 5, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 22:31:26,149 - DEBUG - Prev Rank = 5, dad = {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 22:31:26,150 - DEBUG - Crossover Done, generation = 8, child = 6, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 22:31:26,151 - DEBUG - Mutation Done, generation = 8, child = 6, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 22:48:14,662 - DEBUG - Training Done, generation = 8, networks = 6, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 22:48:14,667 - DEBUG - Prev Rank = 6, dad = {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'tanh', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 22:48:14,668 - DEBUG - Crossover Done, generation = 9, child = 0, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'sigmoid', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 22:48:14,669 - DEBUG - Mutation Done, generation = 9, child = 0, {'dropout': 0.3, 'optimizer': 'nadam', 'activation': 'sigmoid', 'nbLayers': 20, 'nbNeurons': 32}
+2018-08-28 23:44:53,517 - DEBUG - Training Done, generation = 9, networks = 0, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-28 23:44:53,523 - DEBUG - Prev Rank = 0, dad = {'dropout': 0.5, 'optimizer': 'adagrad', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 23:44:53,525 - DEBUG - Crossover Done, generation = 9, child = 1, {'dropout': 0.5, 'optimizer': 'nadam', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-28 23:44:53,527 - DEBUG - Mutation Done, generation = 9, child = 1, {'dropout': 0.5, 'optimizer': 'nadam', 'activation': 'sigmoid', 'nbLayers': 9, 'nbNeurons': 768}
+2018-08-29 00:16:35,860 - DEBUG - Training Done, generation = 9, networks = 1, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-29 00:16:35,865 - DEBUG - Prev Rank = 1, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-29 00:16:35,866 - DEBUG - Crossover Done, generation = 9, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-29 00:16:35,867 - DEBUG - Mutation Done, generation = 9, child = 2, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-29 00:48:30,410 - DEBUG - Training Done, generation = 9, networks = 2, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-29 00:48:30,415 - DEBUG - Prev Rank = 2, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-29 00:48:30,416 - DEBUG - Crossover Done, generation = 9, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-29 00:48:30,417 - DEBUG - Mutation Done, generation = 9, child = 3, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-29 01:20:40,630 - DEBUG - Training Done, generation = 9, networks = 3, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-29 01:20:40,634 - DEBUG - Prev Rank = 3, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-29 01:20:40,636 - DEBUG - Crossover Done, generation = 9, child = 4, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-29 01:20:40,637 - DEBUG - Mutation Done, generation = 9, child = 4, {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-29 01:53:01,109 - DEBUG - Training Done, generation = 9, networks = 4, parentFitness = 10.0000, childFitness = 10.0000
+2018-08-29 01:53:01,113 - DEBUG - Prev Rank = 4, dad = {'dropout': 0.2, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-29 01:53:01,115 - DEBUG - Crossover Done, generation = 9, child = 5, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}
+2018-08-29 01:53:01,115 - DEBUG - Mutation Done, generation = 9, child = 5, {'dropout': 0.4, 'optimizer': 'nadam', 'activation': 'linear', 'nbLayers': 3, 'nbNeurons': 512}

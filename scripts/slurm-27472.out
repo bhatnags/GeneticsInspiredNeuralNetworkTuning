@@ -1,0 +1,98 @@
+Using TensorFlow backend.
+2018-08-27 20:08:10.946048: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX
+slurmstepd: error: *** JOB 27472 ON boyle-n003 CANCELLED AT 2018-08-29T02:08:03 DUE TO TIME LIMIT ***
+
+
+###############################################################################
+TCHPC Cluster: boyle
+Job 27472 (test:) for User 'patilu' in Account 'pi-ssanvito'
+Finished at: Wed Aug 29 02:08:03 IST 2018
+
+Job completion status:
+======================
+
+       JobID    JobName AllocCPUS NTasks NNodes     MaxRSS    MaxRSSNode  MaxDiskRead MaxDiskWrite    Elapsed      State ExitCode 
+------------ ---------- --------- ------ ------ ---------- ------------- ------------ ------------ ---------- ---------- -------- 
+27472             test:        16             1                                                    1-06:00:02    TIMEOUT      0:0 
+
+
+Job details:
+============
+
+JobId=27472 JobName=test:
+   UserId=patilu(5567) GroupId=patilu(9370) MCS_label=N/A
+   Priority=100952 Nice=0 Account=pi-ssanvito QOS=normal
+   JobState=COMPLETING Reason=TimeLimit Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   DerivedExitCode=0:0
+   RunTime=1-06:00:02 TimeLimit=1-06:00:00 TimeMin=N/A
+   SubmitTime=2018-08-27T20:07:40 EligibleTime=2018-08-27T20:07:40
+   StartTime=2018-08-27T20:08:01 EndTime=2018-08-29T02:08:03 Deadline=N/A
+   PreemptTime=None SuspendTime=None SecsPreSuspend=0
+   Partition=compute AllocNode:Sid=boyle01:21212
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=boyle-n003
+   BatchHost=boyle-n003
+   NumNodes=1 NumCPUs=16 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=16,mem=63000M,node=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+     Nodes=boyle-n003 CPU_IDs=0-15 Mem=63000 GRES_IDX=
+   MinCPUsNode=1 MinMemoryNode=63000M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   Gres=(null) Reservation=(null)
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/home/users/patilu/test/bashscript.sh
+   WorkDir=/home/users/patilu/test
+   StdErr=/home/users/patilu/test/slurm-27472.out
+   StdIn=/dev/null
+   StdOut=/home/users/patilu/test/slurm-27472.out
+   Power=
+
+
+SLURM Bank Statement:
+=====================
+
+User           Usage |        Account     Usage | Account Limit Available (CPU hrs)
+---------- --------- + -------------- --------- + ------------- ---------
+aakande            0 |    PI-SSANVITO    61,444 |       100,000    38,556
+anais          2,753 |    PI-SSANVITO    61,444 |       100,000    38,556
+awadhesh           0 |    PI-SSANVITO    61,444 |       100,000    38,556
+cmotta             0 |    PI-SSANVITO    61,444 |       100,000    38,556
+cucinotta      1,524 |    PI-SSANVITO    61,444 |       100,000    38,556
+drogheta           0 |    PI-SSANVITO    61,444 |       100,000    38,556
+ellism             0 |    PI-SSANVITO    61,444 |       100,000    38,556
+gabriele          12 |    PI-SSANVITO    61,444 |       100,000    38,556
+galantem           0 |    PI-SSANVITO    61,444 |       100,000    38,556
+jacopo             0 |    PI-SSANVITO    61,444 |       100,000    38,556
+janelson           0 |    PI-SSANVITO    61,444 |       100,000    38,556
+kapildeb           0 |    PI-SSANVITO    61,444 |       100,000    38,556
+kumaras           67 |    PI-SSANVITO    61,444 |       100,000    38,556
+llololl            0 |    PI-SSANVITO    61,444 |       100,000    38,556
+lunghia        2,646 |    PI-SSANVITO    61,444 |       100,000    38,556
+maria              0 |    PI-SSANVITO    61,444 |       100,000    38,556
+moynihag           0 |    PI-SSANVITO    61,444 |       100,000    38,556
+orhano             0 |    PI-SSANVITO    61,444 |       100,000    38,556
+patilu        13,329 |    PI-SSANVITO    61,444 |       100,000    38,556
+rajarshi           0 |    PI-SSANVITO    61,444 |       100,000    38,556
+rkhatib            0 |    PI-SSANVITO    61,444 |       100,000    38,556
+roychous         173 |    PI-SSANVITO    61,444 |       100,000    38,556
+runggeri           0 |    PI-SSANVITO    61,444 |       100,000    38,556
+sarsari            0 |    PI-SSANVITO    61,444 |       100,000    38,556
+shuklag            0 |    PI-SSANVITO    61,444 |       100,000    38,556
+spellacl           3 |    PI-SSANVITO    61,444 |       100,000    38,556
+syedm              0 |    PI-SSANVITO    61,444 |       100,000    38,556
+tom00              0 |    PI-SSANVITO    61,444 |       100,000    38,556
+yzhang1       40,938 |    PI-SSANVITO    61,444 |       100,000    38,556
+zottil             0 |    PI-SSANVITO    61,444 |       100,000    38,556
+
+
+Acknowledgements:
+=================
+
+Note that usage of TCHPC Resources *must* be acknowledged in all publications.
+
+Please see this page for details relevant to this cluster:
+
+http://www.tchpc.tcd.ie/resources/acknowledgementpolicy
+
+################################################################################
