@@ -13,7 +13,8 @@ Dropouts range from 0.1 to 0.5.
 
 Using genetic algorithm, the networks are initialized using random sets of configuration variables. These networks then exchange hyper-parameters with each others(a.k.a. crossover). The networks get the change to mutate @2%. This process is called as breeding. The process repeats for generations. Due to memory and time constraints, the whole code ran for 1day-5hours, fetching results for 10 generations.
 
-
+Number of networks initialized = 7
+Processors used  = 1
 
 ## Requirements:
 
@@ -38,5 +39,10 @@ The following fitness - heatmap shows number of nodes, fitness, layers and dropo
 
 A time lapse of various generations at rank level is shown below. Since, it's a sequential code, the graphs can be seen in a beautiful stair-case format. Total time taken is ~29 hours for 10 generations. Since tensorflow saves the previous model data, the time taken increases with generation with 1st generation taking 139 minutes and going as high as 200 minutes in later generations.
 ![TimeDashboard](./Images/TimeDashboard.png) ![PassageTime](./Images/PassageTime.png)
+
+
+Since, initialization of hyper-per is random and total possible combinations of hyper-parameters is tens of thousands, it is highly unlikely to get the best combination initialized of bred. To check this, a population of 70 networks is initialized on one processor. 
+
+
 
 
