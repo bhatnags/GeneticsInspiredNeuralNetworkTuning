@@ -35,4 +35,8 @@ A quick crossstab of the tested combinations of hyper-parameters is shown below.
 
 A more detailed plot is as follows. The size of the bubbles denote the fitness. While with linear activation function, 'nadam' optimizer has been more frequently tested, with sigmoid activation function, adagrad is more frequently tested.  ![Details](./Images/Details.png) 
 
-The following fitness - heatmap shows that sgd optimizer has been tested once with selu and showed best accuracy. 
+The following fitness - heatmap shows number of nodes, fitness, layers and dropout percentage. 'sgd' optimizer has been tested once with 'selu' and showed best accuracy of 48.4%. Linear activation function showed good accuracy with 'nadam' when the number of nodes are 1024 in 3 hidden layers. ![Detailed](./Images/Detailed.png)
+
+A time lapse of various generations at rank level is shown below. Since, it's a sequential code, the graphs can be seen in a beautiful stair-case format. Total time taken is ~29 hours for 10 generations. ![TimeDashboard](./Images/TimeDashboard.png) ![PassageTime](./Images/PassageTime.png)
+
+
