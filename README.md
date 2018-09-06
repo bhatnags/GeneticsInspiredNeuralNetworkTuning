@@ -41,7 +41,7 @@ A time lapse of various generations at rank level is shown below. Since, it's a 
 ![TimeDashboard](./Images/TimeDashboard.png) ![PassageTime](./Images/PassageTime.png)
 
 
-Since, initialization of hyper-per is random and total possible combinations of hyper-parameters is tens of thousands, it is highly unlikely to get the best combination initialized of bred. To check this, a population of 70 networks is initialized on one processor. 
+Since, initialization of hyper-parameters is random and total possible combinations of hyper-parameters is tens of thousands, it is highly unlikely to get the best combination initialized of bred. To check this, a population of 70 networks is initialized on one processor. 
 
 
 
