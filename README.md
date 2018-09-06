@@ -50,7 +50,5 @@ A snippet of change in fitness with networks:
 The following fitness - heatmap shows fitness variation with generations and networks. The crosstab of activation functions and optimizer functions uses colored cells to display the level of fitness for various combinations. The cell text has number of hidden layers, nodes, dropout and fitness respectively. The below graphs are for 7 and 70 networks initialized cases respectively, where only the best hyper-parameter configurations (*as per activation and optimizer*) are shown. 
 In 7 networks case, 'sgd' optimizer has been tested once with 'selu' and showed best accuracy of 48.4%. Linear activation function showed good accuracy with 'nadam' when the number of nodes are 1024 in 3 hidden layers. ![HeatMap](./Images/HeatMap.png)
 
-looking at the 70 networks heatmap, it can be concluded that most of the combinations of activation functions and optimizer functions have been tried. The best accuracy achieved is using selu-adagrad-15 layers-512 nodes-0.25 dropout
-
-
+Looking at the 70 networks heatmap, it can be concluded that most of the combinations of activation functions and optimizer functions have been tried. The best accuracy achieved is using selu-adagrad-15 layers-512 nodes-0.25 dropout
 
