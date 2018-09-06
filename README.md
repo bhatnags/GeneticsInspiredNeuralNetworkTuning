@@ -31,7 +31,3 @@ Using genetic algorithm, the networks are initialized using random sets of confi
     python snnt.py
 This saves the output in a log file.
 
-A quick crossstab of the tested combinations of hyper-parameters is shown below. The crosstab suggests that while evaluating hyper-parameter combinations for training out of 7 activation functions, hard_sigmoid and elu couldn't come in any set of combinations for the 7 networks, in any of the 10 generations.
-<img align="left" width="400" height="400" src="./Images/Samples.png">
-
-
