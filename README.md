@@ -35,17 +35,22 @@ A quick crossstab of the tested combinations of hyper-parameters is shown below.
 
 A more detailed plot is as follows. The size of the bubbles denote the fitness. While with linear activation function, 'nadam' optimizer has been more frequently tested, with sigmoid activation function, adagrad is more frequently tested.  ![Details](./Images/Details.png) 
 
-The following fitness - heatmap shows number of nodes, fitness, layers and dropout percentage. 'sgd' optimizer has been tested once with 'selu' and showed best accuracy of 48.4%. Linear activation function showed good accuracy with 'nadam' when the number of nodes are 1024 in 3 hidden layers. ![Detailed](./Images/Detailed.png)
-
-A time lapse of various generations at rank level is shown below. Since, it's a sequential code, the graphs can be seen in a beautiful stair-case format. Total time taken is ~29 hours for 10 generations. Since tensorflow saves the previous model data, the time taken increases with generation with 1st generation taking 139 minutes and going as high as 200 minutes in later generations.
+A time lapse of various generations at network level is shown below. Since, it's a sequential code, the graphs can be seen in a beautiful stair-case format. Total time taken is ~29 hours for 10 generations. Since tensorflow saves the previous model data, the time taken increases with generation with 1st generation taking 139 minutes and going as high as 200 minutes in later generations.
 ![TimeDashboard](./Images/TimeDashboard.png) ![PassageTime](./Images/PassageTime.png)
 
 
 Since, initialization of hyper-parameters is random and total possible combinations of hyper-parameters is tens of thousands, it is highly unlikely to get the best combination initialized of bred. To check this, a population of 70 networks is initialized on one processor. The code ran for 2days(time limit of TCHPC-Boyle cluster), running only for 1 generation(70 networks trained) and training 28 networks of the second generation.
 
-A snippet of change in fitness with ranks in the first case with initialization of 7 networks and second case where 70 networks are initialized is as follows: ![7Ranks](./Images/7Ranks.png) ![70Ranks](./Images/70Ranks.png)
+A snippet of change in fitness with networks:
+* in the first case with initialization of 7 networks and 
+* second case where 70 networks are initialized is as follows: 
+![7Ranks](./Images/7Ranks.png) ![70Ranks](./Images/70Ranks.png)
 
 
+The following fitness - heatmap shows fitness variation with generations and networks. The crosstab of activation functions and optimizer functions uses colored cells to display the level of fitness for various combinations. The cell text has number of hidden layers, nodes, dropout and fitness respectively. The below graphs are for 7 and 70 networks initialized cases respectively, where only the best hyper-parameter configurations (*as per activation and optimizer*) are shown. 
+In 7 networks case, 'sgd' optimizer has been tested once with 'selu' and showed best accuracy of 48.4%. Linear activation function showed good accuracy with 'nadam' when the number of nodes are 1024 in 3 hidden layers. ![HeatMap](./Images/HeatMap.png)
+
+looking at the 70 networks heatmap, it can be concluded that most of the combinations of activation functions and optimizer functions have been tried. The best accuracy achieved is using selu-adagrad-15 layers-512 nodes-0.25 dropout
 
 
 
