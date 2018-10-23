@@ -48,29 +48,39 @@ def NNT():
 		for i in range(0, numNetworks):
 			if(bestFitness < 100):
 				#Natural Selection & Crossover, part I of Genetic Algorithm
-				child = {}
 				mum = data[i]
+				#print("parent", data[i])
+				fitnessMum = ga.getFitness(data[i], dataset)
+
 				pRank = (numNetworks + i - 1)%numNetworks #Take previous network
 				dad = data[(pRank)] #Take previous network
 				logger.debug('Prev Rank = %d, dad = %s', pRank, dad)
+				#Crossover
+				child = {}
 				child[i] = ga.crossover(mum, dad)
 				logger.debug('Crossover Done, generation = %d, child = %d, %s', g, i, child[i])
 
 				#Mutation of child
 				ga.mutation(child[i], mutationChance)
 				logger.debug('Mutation Done, generation = %d, child = %d, %s', g, i, child[i])
-				
+				#print("child", child[i])
+
 				#train both the child and mum
 				#select one best out of the parent or child for next generation
-				fitnessMum = ga.getFitness(data[i], dataset)
 				fitnessChild = ga.getFitness(child[i], dataset)
+
 				logger.debug('Training Done, generation = %d, networks = %d, parentFitness = %0.4f, childFitness = %0.4f', g, i, fitnessMum, fitnessChild)
-				if fitnessChild > fitnessMum:
-					data[i] = child[i]
-					bestFitness = fitnessChild
-				else:
-					data[i] = mum
-					bestFitness = fitnessMum
+
+				#print("after fitness calculation................")
+				#print("data", data[i])
+				#print("child", child[i])
+				if (bestFitness<fitnessChild) or (bestFitness<fitnessMum):
+					if fitnessChild > fitnessMum:
+						data[i] = child[i]
+						bestFitness = fitnessChild
+					else:
+						data[i] = mum
+						bestFitness = fitnessMum
 				'''
 				Profiling memory
 				'''
