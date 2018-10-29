@@ -1,28 +1,46 @@
-from memory_profiler import profile
+#from memory_profiler import profile
 import logging
-
 import collections
 from collections import OrderedDict
-
+from random import randint
 import network
 import genetic
 
-@profile
-def NNT():
-	"""Give parameters"""
-	gen = 30
+
+'''
+Get parameters for optimizing Neural Network
+'''
+def getParameters():
+	# Number of generations
+	generation = 5
+	# Dataset for comparison
 	dataset = 'cifar10'
-	numNetworks = 7
-	mutationChance = 2 
-	
+	# Number of networks OR population size in every generations
+	numNetworks = 4
+	# Rate of mutation
+	mutationChance = 30
+	# Hyper-parameters to be optimized
 	param = collections.OrderedDict({
-		'nbNeurons': {1:32, 2:64, 3:128, 4:256, 5:512, 6:768, 7:1024},
-		'nbLayers': {1:1, 2:3, 3:6, 4:9, 5:12, 6:15, 7:20},
-		'activation': {1:'sigmoid', 2:'elu', 3:'selu', 4:'relu', 5:'tanh', 6:'hard_sigmoid', 7:'linear'}, 
-		'optimizer': {1:'sgd', 2:'rmsprop', 3:'adagrad', 4:'adadelta', 5:'adam', 6:'adamax', 7:'nadam'},
-		'dropout': {1:0.1, 2:0.15, 3:0.2, 4:0.25, 5:0.3, 6:0.4, 7:0.5}
+		'nbNeurons': {1: 32, 2: 30, 3: 15, 4: 10, 5: 5, 6: 3},  # 2:64, 3:128, 4:256, 5:512, 6:1024},
+		'nbLayers': {1: 1, 2: 3, 3: 6, 4: 9, 5: 12, 6: 15},
+		'activation': {1: 'sigmoid', 2: 'elu', 3: 'selu', 4: 'relu', 5: 'tanh', 6: 'hard_sigmoid'},
+		'optimizer': {1: 'sgd', 2: 'nadam', 3: 'adagrad', 4: 'adadelta', 5: 'adam', 6: 'adamax'},
+		'dropout': {1: 0.1, 2: 0.2, 3: 0.25, 4: 0.3, 5: 0.4, 6: 0.5}
 	})
-	
+	return generation, dataset, numNetworks, mutationChance, param
+
+
+
+'''
+Neural Network Tuning
+'''
+#@profile
+def NNT():
+
+	# Get Parameters
+	generation, dataset, numNetworks, mutationChance, param = getParameters()
+
+	# Get the logger
 	filename = 'output.log'
 	logger = logging.getLogger()
 	handler = logging.FileHandler(filename)
@@ -32,82 +50,83 @@ def NNT():
 	logger.addHandler(handler)
 	logger.setLevel(logging.DEBUG)
 
+	# Initialize the classes
+	net = network.Network(param)
+	ga = genetic.geneticAlgorithm(param)
+	com = network.compare()
+
+	# Initialize the population & the fitness
+	data = {};				# The networks' data array
+	fitnessParent = {};		# The fitness array of the parent
+	fitnessChild = {}; 		# The fitness array of the child
+	networkFitness = {};	# Array of the better out of two fitness - parent and child
+	genBestFitness = {}; 	# Array to save the fitness over the generations
 
 	# Initialize the population
-	data = {}
-	for i in range(0, numNetworks):
-		net = network.Network(param)
+	for i in range(numNetworks):
 		data[i] = net.initNetwork()
-		logger.debug('Initialized network = %d, %s', i, data[i])
-	
-	bestFitness = -1
-	ga = genetic.geneticAlgorithm(param)
+		fitnessParent[i] = -1
+		fitnessChild[i] = -1
+		networkFitness[i] = -1
 
-	for g in range(gen):
-		#for all networks in each generation
-		for i in range(0, numNetworks):
-			if(bestFitness < 100):
-				#Natural Selection & Crossover, part I of Genetic Algorithm
-				mum = data[i]
-				#print("parent", data[i])
-				fitnessMum = ga.getFitness(data[i], dataset)
 
-				pRank = (numNetworks + i - 1)%numNetworks #Take previous network
-				dad = data[(pRank)] #Take previous network
-				logger.debug('Prev Rank = %d, dad = %s', pRank, dad)
-				#Crossover
-				child = {}
-				child[i] = ga.crossover(mum, dad)
-				logger.debug('Crossover Done, generation = %d, child = %d, %s', g, i, child[i])
+	# Start running GA (Genetic Algorithm) generation
+	for g in range(generation):
 
-				#Mutation of child
-				ga.mutation(child[i], mutationChance)
-				logger.debug('Mutation Done, generation = %d, child = %d, %s', g, i, child[i])
-				#print("child", child[i])
+		# For all networks in each generation
+		for i in range(numNetworks):
+			print('0', data)
 
-				#train both the child and mum
-				#select one best out of the parent or child for next generation
-				fitnessChild = ga.getFitness(child[i], dataset)
+			# GET PARENT FITNESS/ACCURACY
+			fitnessParent[i] = ga.getFitness(data[i], dataset)
+			print('1' ,data)
 
-				logger.debug('Training Done, generation = %d, networks = %d, parentFitness = %0.4f, childFitness = %0.4f', g, i, fitnessMum, fitnessChild)
 
-				#print("after fitness calculation................")
-				#print("data", data[i])
-				#print("child", child[i])
-				if (bestFitness<fitnessChild) or (bestFitness<fitnessMum):
-					if fitnessChild > fitnessMum:
-						data[i] = child[i]
-						bestFitness = fitnessChild
-					else:
-						data[i] = mum
-						bestFitness = fitnessMum
-				'''
-				Profiling memory
-				'''
-				pRank = None
-				child = None
-				mum = None
-				dad = None
-				fitnessMum = None
-				fitnessChild = None
-			else:
-				print "100% fitness achieved"
-				print data[i]
-		
-	del gen
-	del dataset
-	del numNetworks
-	del mutationChance
-	del param
-	del data
-	del net
-	del bestFitness
-	del ga 
+			# BREED THE CHILD
+			child = ga.breeding(i, data, mutationChance, numNetworks)
+			print('2',data)
+
+
+			# GET CHILD'S FITNESS/ACCURACY
+			fitnessChild[i] = ga.getFitness(child, dataset)
+			print('3',data)
+
+
+			'''
+			If the network fitness has improved over previous generation, 
+				then pass on the features/hyperparameters
+			Pass on the better of the two (parent or child) from this generation to the next generation
+			'''
+			networkFitness, data = com.networkData(i, networkFitness, fitnessParent, fitnessChild, data, child)
+			print('4', data)
+			logger.debug('generation=%d, Rank=%d, parent=%s, child=%s, '
+						 'parentFitness=%0.4f, childFitness=%0.4f, networkFitness=%0.4f',
+						 g, i, data[i], child,
+						 fitnessParent[i], fitnessChild[i], networkFitness[i])
+
+
+		'''
+		Compare the fitness of the best networks of all the families
+		Get the best fitness the generation 
+		Kill the poorest performing of the population 
+		Randomly initialize the poorest fitness population to keep the population constant
+		'''
+		genBestFitness[g], data = network.genFitness(networkFitness, data, param)
+		print('5', data)
+		print(genBestFitness[g], data)
+
+#	del gen
+#	del dataset
+#	del numNetworks
+#	del mutationChance
+#	del param
+#	del data
+#	del net
+#	del bestFitness
+#	del ga
 		
 
 if __name__ == '__main__':
 	NNT()
 		
-
-
 
