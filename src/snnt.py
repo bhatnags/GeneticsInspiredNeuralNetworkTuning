@@ -7,6 +7,21 @@ import network
 import genetic
 
 
+
+'''
+Initialize the classes
+'''
+def initClasses(param):
+	# The Network class
+	net = network.Network(param)
+	# The Genetic Algorithm class
+	ga = genetic.geneticAlgorithm(param)
+	# The class with comparison functions
+	com = network.compare()
+	return net, ga, com
+
+	
+	
 '''
 Get parameters for optimizing Neural Network
 '''
@@ -51,9 +66,7 @@ def NNT():
 	logger.setLevel(logging.DEBUG)
 
 	# Initialize the classes
-	net = network.Network(param)
-	ga = genetic.geneticAlgorithm(param)
-	com = network.compare()
+	net, ga, com = initClasses(param)
 
 	# Initialize the population & the fitness
 	data = {};				# The networks' data array
@@ -73,43 +86,44 @@ def NNT():
 	# Start running GA (Genetic Algorithm) generation
 	for g in range(generation):
 
-		# For all networks in each generation
-		for i in range(numNetworks):
+		if genBestFitness[g] < 100:
+			# For all networks in each generation
+			for i in range(numNetworks):
 
-			# GET PARENT FITNESS/ACCURACY
-			fitnessParent[i] = ga.getFitness(data[i], dataset)
-
-
-			# BREED THE CHILD
-			child = ga.breeding(i, data, mutationChance, numNetworks)
+				# GET PARENT FITNESS/ACCURACY
+				fitnessParent[i] = ga.getFitness(data[i], dataset)
 
 
-			# GET CHILD'S FITNESS/ACCURACY
-			fitnessChild[i] = ga.getFitness(child, dataset)
+				# BREED THE CHILD
+				child = ga.breeding(i, data, mutationChance, numNetworks)
+
+
+				# GET CHILD'S FITNESS/ACCURACY
+				fitnessChild[i] = ga.getFitness(child, dataset)
+
+
+				'''
+				If the network fitness has improved over previous generation, 
+					then pass on the features/hyperparameters
+				Pass on the better of the two (parent or child) from this generation to the next generation
+				'''
+				networkFitness, data = com.networkData(i, networkFitness, fitnessParent, fitnessChild, data, child)
+
+				logger.debug('generation=%d, Rank=%d, parent=%s, child=%s, '
+							 'parentFitness=%0.4f, childFitness=%0.4f, networkFitness=%0.4f',
+							 g, i, data[i], child,
+							 fitnessParent[i], fitnessChild[i], networkFitness[i])
 
 
 			'''
-			If the network fitness has improved over previous generation, 
-				then pass on the features/hyperparameters
-			Pass on the better of the two (parent or child) from this generation to the next generation
+			Compare the fitness of the best networks of all the families
+			Get the best fitness the generation 
+			Kill the poorest performing of the population 
+			Randomly initialize the poorest fitness population to keep the population constant
 			'''
-			networkFitness, data = com.networkData(i, networkFitness, fitnessParent, fitnessChild, data, child)
+			genBestFitness[g], data = network.genFitness(networkFitness, data, param)
 
-			logger.debug('generation=%d, Rank=%d, parent=%s, child=%s, '
-						 'parentFitness=%0.4f, childFitness=%0.4f, networkFitness=%0.4f',
-						 g, i, data[i], child,
-						 fitnessParent[i], fitnessChild[i], networkFitness[i])
-
-
-		'''
-		Compare the fitness of the best networks of all the families
-		Get the best fitness the generation 
-		Kill the poorest performing of the population 
-		Randomly initialize the poorest fitness population to keep the population constant
-		'''
-		genBestFitness[g], data = network.genFitness(networkFitness, data, param)
-
-		print(genBestFitness[g], data)
+			print(genBestFitness[g], data)
 
 
 	del generation;	del dataset; del numNetworks; del mutationChance; del param;
