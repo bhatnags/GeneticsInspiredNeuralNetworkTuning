@@ -113,7 +113,7 @@ class Network():
         model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics=['accuracy'])
 
         # Fit the model 
-        model.fit(x_train, y_train, batch_size=batchSize, epochs=1000, verbose=0, validation_data=(x_test, y_test),
+        model.fit(x_train, y_train, batch_size=batchSize, epochs=10, verbose=0, validation_data=(x_test, y_test),
                   callbacks=[earlyStopper])
 
         # Get the fitness of the model

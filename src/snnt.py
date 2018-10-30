@@ -12,7 +12,7 @@ Get parameters for optimizing Neural Network
 '''
 def getParameters():
 	# Number of generations
-	generation = 5
+	generation = 25
 	# Dataset for comparison
 	dataset = 'cifar10'
 	# Number of networks OR population size in every generations
@@ -21,7 +21,7 @@ def getParameters():
 	mutationChance = 30
 	# Hyper-parameters to be optimized
 	param = collections.OrderedDict({
-		'nbNeurons': {1: 32, 2: 30, 3: 15, 4: 10, 5: 5, 6: 3},  # 2:64, 3:128, 4:256, 5:512, 6:1024},
+		'nbNeurons': {1: 4, 2: 8, 3: 16, 4: 32, 5: 64, 6: 128},
 		'nbLayers': {1: 1, 2: 3, 3: 6, 4: 9, 5: 12, 6: 15},
 		'activation': {1: 'sigmoid', 2: 'elu', 3: 'selu', 4: 'relu', 5: 'tanh', 6: 'hard_sigmoid'},
 		'optimizer': {1: 'sgd', 2: 'nadam', 3: 'adagrad', 4: 'adadelta', 5: 'adam', 6: 'adamax'},
@@ -75,21 +75,17 @@ def NNT():
 
 		# For all networks in each generation
 		for i in range(numNetworks):
-			print('0', data)
 
 			# GET PARENT FITNESS/ACCURACY
 			fitnessParent[i] = ga.getFitness(data[i], dataset)
-			print('1' ,data)
 
 
 			# BREED THE CHILD
 			child = ga.breeding(i, data, mutationChance, numNetworks)
-			print('2',data)
 
 
 			# GET CHILD'S FITNESS/ACCURACY
 			fitnessChild[i] = ga.getFitness(child, dataset)
-			print('3',data)
 
 
 			'''
@@ -98,7 +94,7 @@ def NNT():
 			Pass on the better of the two (parent or child) from this generation to the next generation
 			'''
 			networkFitness, data = com.networkData(i, networkFitness, fitnessParent, fitnessChild, data, child)
-			print('4', data)
+
 			logger.debug('generation=%d, Rank=%d, parent=%s, child=%s, '
 						 'parentFitness=%0.4f, childFitness=%0.4f, networkFitness=%0.4f',
 						 g, i, data[i], child,
@@ -112,19 +108,14 @@ def NNT():
 		Randomly initialize the poorest fitness population to keep the population constant
 		'''
 		genBestFitness[g], data = network.genFitness(networkFitness, data, param)
-		print('5', data)
+
 		print(genBestFitness[g], data)
 
-#	del gen
-#	del dataset
-#	del numNetworks
-#	del mutationChance
-#	del param
-#	del data
-#	del net
-#	del bestFitness
-#	del ga
-		
+
+	del generation;	del dataset; del numNetworks; del mutationChance; del param;
+	del net, ga, com;
+	del data; del fitnessParent; del fitnessChild; del networkFitness; del genBestFitness;
+
 
 if __name__ == '__main__':
 	NNT()
